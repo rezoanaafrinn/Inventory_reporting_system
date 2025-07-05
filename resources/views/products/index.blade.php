@@ -3,7 +3,7 @@
 @section('content')
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h2>All Products</h2>
-        <a href="" class="btn btn-success">+ Add New Product</a>
+        <a href="{{ route('products.create') }}" class="btn btn-success">+ Add New Product</a>
     </div>
 
     @if($products->count() > 0)
